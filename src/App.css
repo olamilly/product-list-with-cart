@@ -271,7 +271,13 @@ button:hover {
 	text-decoration: underline;
 	font-weight: 600;
 }
+div.imageContainer > img {
+	height: 194px;
+}
 @media (max-width: 778px) {
+	div.imageContainer > img {
+		height: 100% !important;
+	}
 	.App {
 		flex-direction: column;
 	}
@@ -297,6 +303,9 @@ button:hover {
 	}
 }
 @media (max-width: 450px) {
+	div.imageContainer > img {
+		height: 100% !important;
+	}
 	main {
 		width: 95dvw;
 		grid-template-columns: 1fr;
@@ -339,5 +348,14 @@ button:hover {
 .modal-body {
 	padding: 0.5rem;
 }
-
+.outOfStockContainer {
+	filter: grayscale(100%);
+}
+.outOfStockPill {
+	background-color: lightgrey !important;
+	border: lightgrey !important;
+}
+.outOfStock > span {
+	color: white !important;
+}
 /*- Weights: 400, 600, 700 */

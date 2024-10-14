@@ -17,6 +17,7 @@ function App() {
 				for (var i = 0; i < data.length; i++) {
 					data[i]["id"] = i;
 					data[i]["number"] = 0;
+					data[i]["inventory"] = Math.floor(Math.random() * 11);
 				}
 				setDesserts(data);
 			})
